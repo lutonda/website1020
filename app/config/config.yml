@@ -33,8 +33,11 @@ framework:
 
 # Twig Configuration
 twig:
+    globals:
+      version: '3.0.1'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    paths: ["%kernel.project_dir%/src/AppBundle/Views"]
 
 # Doctrine Configuration
 doctrine:
